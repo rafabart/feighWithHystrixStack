@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+# Habilita o fallback do Hysdrix.
+feign:
+  hystrix:
+    enabled: true
+
+# Tempo de espera da requisição até chamar o fallback.
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5
