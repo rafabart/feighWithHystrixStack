@@ -13,11 +13,13 @@ Este pacote possui dois projeto: webApp e o feighWithHysdrix.
 Rodar cada uma em um Intellij.
 
 <p>Para simular o circuito fechado, acessar no navegador:</p>
+
 http://localhost:8081/customerClients
 
 Um objeto JSON com atributo "id = 1" será exibido.
 
 <p>Para simular o circuito aberto, pare de rodar a aplicação webApp e tente acessar o mesmo link:</p>
+
 http://localhost:8081/customerClients
 
 Um objeto JSON com atributo "id = 2" será exibido.
