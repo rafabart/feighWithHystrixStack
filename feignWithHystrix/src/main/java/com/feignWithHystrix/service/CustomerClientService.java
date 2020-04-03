@@ -11,9 +11,9 @@ import java.util.List;
  * fallback = CustomerFallback.class -> é a classe com o metodo implementado nessa interface
  * que sera chamado caso o metodo falhe na chamada da url no FeighClient.
  */
-@FeignClient(url = "http://localhost:8080/customers/", name = "customerClient", fallback = CustomerFallback.class)
+@FeignClient(url = "http://localhost:8080", name = "customerClient", fallback = CustomerFallback.class)
 public interface CustomerClientService {
 
-    @GetMapping
+    @GetMapping("/customers")
     List<Customer> findAll();
 }
